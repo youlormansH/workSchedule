@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // code for current date and time
-    let NowMoment = moment().format("MMMM Do YYYY");
+    let NowMoment = moment().format("dddd MMMM YYYY");
     let displayDate = document.getElementById("currentDay");
     displayDate.innerHTML = NowMoment;
     let currentHour = moment().format("HH");
@@ -36,8 +36,9 @@ $(document).ready(function () {
       localStorage.setItem(time, value);
     });
   
-    //retrieves items from local storage and sets them in proper places
-    $("#hour-09 .time-block").val(localStorage.getItem("09"));
+    //retrieves items from local storage and sets them into place
+    $("#hour-08 .time-block").val(localStorage.getItem("08"));
+    $("#hour-09 .time-block").val(localStorage.getItem("9"));
     $("#hour-10 .time-block").val(localStorage.getItem("10"));
     $("#hour-11 .time-block").val(localStorage.getItem("11"));
     $("#hour-12 .time-block").val(localStorage.getItem("12"));
@@ -45,5 +46,4 @@ $(document).ready(function () {
     $("#hour-14 .time-block").val(localStorage.getItem("14"));
     $("#hour-15 .time-block").val(localStorage.getItem("15"));
     $("#hour-16 .time-block").val(localStorage.getItem("16"));
-    $("#hour-17 .time-block").val(localStorage.getItem("17"));
   });
