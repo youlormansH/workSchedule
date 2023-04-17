@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-textarea {
+input {
   background: transparent;
   border: none;
   resize: none;
@@ -13,7 +13,7 @@ textarea {
   padding: 10px;
 }
 
-.jumbotron {
+.work-day {
   text-align: center;
   background-color: transparent;
   color: black;
@@ -21,11 +21,11 @@ textarea {
   border-bottom: 10px solid black;
 }
 
-.description {
+.Name {
   white-space: pre-wrap;
 }
 
-.time-block {
+.time {
   text-align: center;
   border-radius: 15px;
 }
@@ -66,6 +66,6 @@ textarea {
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 15px;
   transition: all 0.3s ease-in-out;
 }
