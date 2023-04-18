@@ -21,9 +21,9 @@ input {
   border-bottom: 10px solid black;
 }
 
-/* .Name {
+.Name {
   white-space: pre-wrap; 
-}  */
+} 
 
 .time-name {
   text-align: center;
