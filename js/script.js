@@ -1,9 +1,10 @@
 $(document).ready(function () {
     // code for current date and time
-    let currentDay = moment().format("dddd MMMM YYYY");
+    let NowMoment = moment().format("dddd MMMM YYYY");
     let displayDate = document.getElementById("currentDay");
-    displayDate.innerHTML = currentDay;
+    displayDate.innerHTML = NowMoment;
     let currentHour = moment().format("HH");
+
 
     // Button function that clear local storage and clear contents
     $("#clearFieldsBtn").click(function (event) {
@@ -18,7 +19,7 @@ $(document).ready(function () {
       
       if (currentHour == timeDay) {
         $(this).addClass("present");
-        $(this).children(".name").addClass("white-text");
+        $(this).children(".time-Name").addClass("white-text");
       } else if (currentHour < timeDay) {
         $(this).removeClass("present");
         $(this).addClass("future");
