@@ -21,11 +21,11 @@ input {
   border-bottom: 10px solid black;
 }
 
-.Name {
-  white-space: pre-wrap;
-}
+/* .Name {
+  white-space: pre-wrap; 
+}  */
 
-.time {
+.time-name {
   text-align: center;
   border-radius: 15px;
 }
