@@ -1,10 +1,10 @@
 $(document).ready(function () {
     // code for current date and time
-    let NowMoment = moment().format("dddd MMMM YYYY");
+    let currentDay = moment().format("dddd MMMM YYYY");
     let displayDate = document.getElementById("currentDay");
-    displayDate.innerHTML = NowMoment;
+    displayDate.innerHTML = currentDay;
     let currentHour = moment().format("HH");
-  
+
     // Button function that clear local storage and clear contents
     $("#clearFieldsBtn").click(function (event) {
       event.preventDefault;
@@ -14,15 +14,15 @@ $(document).ready(function () {
   
     // the hour from each time slot and compares it to actual time
     $(".time-day").each(function () {
-      var timeDiv = $(this).attr("id").split("-")[1];
+      var timeDay = $(this).attr("id").split("-")[1];
       
-      if (currentHour == timeDiv) {
+      if (currentHour == timeDay) {
         $(this).addClass("present");
-        $(this).children(".description").addClass("white-text");
-      } else if (currentHour < timeDiv) {
+        $(this).children(".name").addClass("white-text");
+      } else if (currentHour < timeDay) {
         $(this).removeClass("present");
         $(this).addClass("future");
-      } else if (currentHour > timeDiv) {
+      } else if (currentHour > timeDay) {
         $(this).removeClass("future");
         $(this).addClass("past");
       }

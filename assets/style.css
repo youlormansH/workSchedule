@@ -32,8 +32,8 @@ input {
 
 .row {
   white-space: pre-wrap;
-  height: 50px;
-  border-top: 5px solid white;
+  height: 50%;
+  border-top: 2px solid white;
 }
 
 .hour {
